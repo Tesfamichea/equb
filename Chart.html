@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet"href="index.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+
+                <div class="container">
+                    <div class="heading">
+                      <h1>WORLD CUP Group Division</h1>
+                    </div>
+                    <div class="row">
+                      <div class="card">
+                        <div class="card-header">
+                          <h1>GROUP A</h1>
+                        </div>
+                        <div class="card-body">
+                      
+                            <div class="col-lg-8 grid-margin stretch-card">
+                                <div class="card1">
+                                  <div class="card-body">
+                            
+                                    <div class="table-responsive">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                              
+                                              <th>country</th>
+                                              <th>point</th>
+                                              <th>flag</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <td>Japan</td>
+                                            <td><input id="point1" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Germany</td>
+                                            <td><input id="point2" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Canada</td>
+                                            <td><input id="point3" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                           
+                                            <td>Iran</td>
+                                            <td><input id="point4" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                            
+                                        </tbody>
+                                      </table>
+                                      <input type="button" class="btn btn-dark" value="Save" onclick="insert()" />
+                                      <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Check chart</button> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">
+                          <h1>GROUP B</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-lg-8 grid-margin stretch-card">
+                                <div class="card1">
+                                  <div class="card-body">
+                            
+                                    <div class="table-responsive">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                              
+                                              <th>country</th>
+                                              <th>point</th>
+                                              <th>flag</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <td>Mexico</td>
+                                            <td><input id="point5" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                           
+                                            <td>Argentina</td>
+                                            <td><input id="point6" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>S.Arabia</td>
+                                            <td><input id="point7" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Poland</td>
+                                            <td><input id="point8" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <input type="button" class="btn btn-dark" value="Save" onclick="insert1()" />
+                                      <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Check chart</button> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">
+                          <h1>GROUP C</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-lg-8 grid-margin stretch-card">
+                                <div class="card1">
+                                  <div class="card-body">
+                        
+                                    <div class="table-responsive">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                              
+                                              <th>country</th>
+                                              <th>point</th>
+                                              <th>flag</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <td>Urugway</td>
+                                            <td><input id="point9" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Costarica</td>
+                                            <td><input id="point10" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Portugal</td>
+                                            <td><input id="point11" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                           
+                                            <td>Ghana</td>
+                                            <td><input id="point12" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                            
+                                        </tbody>
+                                      </table>
+                                      <input type="button" class="btn btn-dark" value="Save" onclick="insert2()" />
+                                      <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Check chart</button> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">
+                          <h1>GROUP D</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-lg-8 grid-margin stretch-card">
+                                <div class="card1">
+                                  <div class="card-body">
+                              
+                                    <div class="table-responsive">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                              
+                                              <th>country</th>
+                                              <th>point</th>
+                                              <th>flag</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <td>S.Korea</td>
+                                            <td><input id="point13" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>Spain</td>
+                                            <td><input id="point14" type="number" placeholder="point" /></td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>France</td>
+                                            <td><input id="point15" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            
+                                            <td>England</td>
+                                            <td><input id="point16" type="number" placeholder="point" /></td>
+                                            <td></td>
+                                          </tr>
+                            
+                                        </tbody>
+                                      </table>
+                                      <input type="button" class="btn btn-dark" value="Save" onclick="insert3()" />
+                                      <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Check chart</button> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+</body>
+<script src="index.js"></script>
+</html>
